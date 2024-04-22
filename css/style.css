@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root{
+    --background-1: #fff;
+    --background-2: #000;
+    --color-first: #FFC407;
+    --color-second: #E6C00B;
+
+}
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Space Grotesk", sans-serif;
+    height: 100vh;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+#h1{
+    font-size: 60px;
+    text-align: center;
+    margin: 60px;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+    
+}
+
+
+.details_bg{
+    background-color: var(--color-first);
+    padding: 50px;
+}
+/* TOPO */
+
+.topo{
+  padding: 2rem 4%;
+   
+}
+
+.topo > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+
+.topo .details_bg{
+    border-radius: 999px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 200px;
+    top: 310px;
+    z-index: 1;
+}
+
+.img_topo{
+    padding: 50px;
+}
+
+.img_topo img{
+    width: 600px;
+    z-index: 2;
+    position: relative;
+}
+
+.text_topo{
+    padding: 15px;
+    
+}
+
+.text_topo h1{
+    margin: 20px;
+    font-size: 70px;
+}
+
+.text_topo p{
+    margin: 20px;
+    
+    
+}
+
+.borda{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.border_bottom{
+    border-bottom: solid 3px var(--color-first);
+    width: 50%;
+    margin-left: 20px;
+}
+
+.borda .btn_borda{
+    padding: 20px;
+    color: var(--background-2);
+    border: solid 3px var(--color-first);
+    border-radius: 38px;
+    transition: all ease-in-out .25s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn_borda span{
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.borda .btn_borda:hover{
+    background-color: var(--color-first);
+    color: #fff;
+}
+
+.destaque{
+    padding: 4rem 4%;
+    
+}
+
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--color-first);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+    
+   
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 400px;
+    margin: 20px auto;
+  }
+
+.card_slide{
+    background-color: var(--background-1);
+    width: 50%;
+    height: 210px;  
+    border-radius: 20px;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    color: #000;
+}
+
+.card_slide .img_slide{
+    background: url(../imagens/combo_3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+    height: 150px;
+    border-radius: 999px;
+    margin-top: -90px;
+    margin-left: 29px;
+}
+
+.card_slide p{
+    text-align: center;
+    font-size: 15px;
+    margin: 15px;
+}
+
+#promo{
+    color: red;
+    position: absolute;
+    background-color: var(--background-1);
+    top: -80px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 15px;
+    
+    right: 150px;
+}
+
+.cardapio{
+    height: 100vh;
+    width: 100%;
+}
+
+.container_crd{
+    background-color: #eeebeb;
+    width: 100%;
+    height: 600px;
+    border-radius: 20px;
+    display: flex;
+    overflow-y: auto;
+    overflow: auto;
+    flex-direction: column;
+}
+
+.container_crd::-webkit-scrollbar{
+
+    width: 10px;
+}
+
+.card_group{
+   display: inline-flex;
+   margin: auto;
+}
+
+.card_prod{
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 12px;
+    transition: all ease-in-out .25s;
+    cursor: pointer;
+    
+    
+}
+
+.card_prod h3{
+    margin: 5px;
+    text-align: center;
+}
+
+.card_prod p{
+    font-size: 13px;
+    margin: 8px;
+    text-align: center;
+}
+
+.card_prod:hover{
+    transform: scale(1.03)
+}
+
+.divisor{
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p-padrao{
+    font-size: 35px;
+}
+
+.bar{
+    width: 80%;
+    height: 7px;
+    background-color: var(--color-first);
+}
+
+.sobre{
+    width: 100%;
+    height: 100vh;
+}
+
+.sobre > .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.sobre .card_img{
+    padding: 200px;
+    background-color: #E6C00B;
+    border-radius: 12px;
+}
+
+.sobre .text{
+    width: 60%; 
+    height: 300px;
+    background-color: #eeebeb;
+    border-radius: 12px;
+    overflow-y: auto;
+    overflow: auto;
+    margin: 30px;
+}
+
+
+
+
+.text .p_card{
+    margin: 30px;
+}
+
+.text .h1_card{
+    margin: 20px 50px;
+    text-transform: uppercase;
+}
+
